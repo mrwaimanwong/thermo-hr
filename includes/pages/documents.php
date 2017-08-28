@@ -1,6 +1,7 @@
+<?php include('../header.php'); ?>
 <section class="hero">
 	<div class="wrap">
-		<h1><?php echo $the_title; ?></h1>
+		<h1 id="page-header"></h1>
 
 </div>
 </div>
@@ -19,8 +20,8 @@
 
 	<p>Sed venenatis orci dolor, quis commodo risus rhoncus quis. Donec dapibus blandit velit, dapibus efficitur libero fringilla sit amet. Nam facilisis bibendum metus, vel consectetur urna auctor sed. Aliquam dolor augue, posuere vel sem eget, suscipit rutrum nulla. Ut at odio non nibh consectetur aliquam. Nunc tempor, purus a dictum tristique, lacus massa dapibus augue, nec lobortis justo erat et eros. Vestibulum vitae tempus metus. Suspendisse sed nulla pharetra, maximus velit vitae, pellentesque leo. Duis scelerisque eros ut commodo varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc placerat arcu non leo feugiat aliquam at ac justo. Vivamus efficitur eget enim ac fermentum.</p>
 
-<?php include('includes/page_nav.php'); ?>
+<?php include('../page_nav.php'); ?>
 </main>
 <aside class="sidebar"><ul class="task-nav">
-	<?php include('includes/task_nav.php'); ?>
-</ul></aside></div>
+	<?php include('../task_nav.php'); ?>
+</ul></aside></div><?php include('../footer.php'); ?>

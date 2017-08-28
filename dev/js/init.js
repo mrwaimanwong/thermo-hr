@@ -126,7 +126,7 @@ $('a[href^="#"]').on('click',function (e) {
     $('#section3').css('opacity', 0);
     $('#section4').css('opacity', 0);
     $('#section5').css('opacity', 0);
-  
+
     $('#section1').waypoint(function() {
     $('#section1').addClass('animated fadeInLeft');
   }, { offset: '90%' });
@@ -146,5 +146,48 @@ $('a[href^="#"]').on('click',function (e) {
     $('#section5').waypoint(function() {
     $('#section5').addClass('animated fadeInLeft');
     }, { offset: '90%' });
+
+    function getFileName() {
+      //this gets the full url
+      var url = document.location.href;
+      // //this removes the anchor at the end, if there is one
+      url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("#"));
+      // //this removes the query after the file name, if there is one
+      url = url.substring(0, (url.indexOf("?") == -1) ? url.length : url.indexOf("?"));
+      // //this removes everything before the last slash in the path
+      url = url.substring(url.lastIndexOf("/") + 1, url.length);
+      // //this removes everything after the last period (file extension)
+      url = url.substring(0, url.lastIndexOf("."));
+
+      //this removes everything before the last slash in the path
+      // url = url.substring(url.length, url.lastIndexOf("page=") + 5);
+
+      //this replaces the "-" with a " ".
+      // url = url.replace(/\-/g, ' ');
+
+
+      //return
+      return url;
+      }
+
+  // var $activePage = 'benefits-overview';
+  var url = getFileName();
+  var $title = url.replace(/\-/g, ' ');
+
+  $title = url.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+    return letter.toUpperCase();
+  });
+
+  $('title').html('Thermo - ' + $title);
+
+  if (url == '' || url == 'home') {
+    $('a[href^="/"]').addClass('current');
+    $('body').addClass('home');
+  }
+  else
+  {
+    $('a[href^='+url+']').addClass('current');
+    $("#page-header").text($title);
+  }
 
 });

@@ -1,6 +1,7 @@
+<?php include('../header.php'); ?>
 <section class="hero">
 	<div class="wrap">
-		<h1><?php echo $the_title; ?></h1>
+		<h1 id="page-header"></h1>
 
 </div>
 </div>
@@ -55,8 +56,10 @@
 <li>You move outside your current medical plan’s service area</li>
 </ul>
 
-<?php include('includes/page_nav.php'); ?>
+<?php include('../page_nav.php'); ?>
 </main>
 <aside class="sidebar"><ul class="task-nav">
-	<?php include('includes/task_nav.php'); ?>
+	<?php include('../task_nav.php'); ?>
 </ul></aside></div>
+
+<?php include('../footer.php'); ?>

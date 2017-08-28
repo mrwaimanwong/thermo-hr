@@ -3,6 +3,7 @@ var gulp = require('gulp'),
 //Need to edit the regular expression to account for a second dash
 //So adding the line below for now
 connect = require('gulp-connect-php');
+var cp = require('child_process');
 
 plugins = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'gulp.*', '*'],
@@ -90,9 +91,30 @@ gulp.task('disconnect', function() {
       server.closeServer();
     });
 
+    gulp.task('runshell', function (cb) {
+      cp.exec('cd includes/pages; ./convertphp.sh', function (err, stdout, stderr) {
+        console.log(stdout);
+        console.log(stderr);
+        cb(err);
+      });
+    })
+
+
+    // gulp.task('runshell', function() {
+    //   // In gulp 4, you can return a child process to signal task completion
+    //   return cp.execFile('cd includes/pages/convertphp.sh');
+    // });
+
+//     gulp.task('runshell', function() {
+//   return gulp.src('./**/**')
+//     .pipe(exec('cd includes/pages; ./convertphp.sh'));
+// });
+
 gulp.watch(folder.src + 'images/**/*', ['images']);
-gulp.watch(folder.build + '**/*.html').on('change', plugins.browserSync.reload);
-gulp.watch(folder.build + '**/**/*.php').on('change', plugins.browserSync.reload);
+
+// gulp.watch(folder.build + '**/**/*.php', ['runshell']).on('change', plugins.browserSync.reload);
+gulp.watch(folder.build + '**/**/*.php', ['runshell']);
+gulp.watch(folder.build + '**/**/*.html').on('change', plugins.browserSync.reload);
 gulp.watch(folder.src + 'js/**/*', ['js']).on('change', plugins.browserSync.reload);
 gulp.watch(folder.src + 'scss/**/*', ['css']);
 
