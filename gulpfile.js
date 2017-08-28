@@ -17,6 +17,8 @@ plugins = require('gulp-load-plugins')({
     build: './'
   };
 
+let server = new connect();
+
 gulp.task('connect-sync', ['js'], function() {
   connect.server({}, function (){
     plugins.browserSync({
@@ -54,6 +56,7 @@ gulp.task('js', function() {
   .pipe(plugins.concat('scripts.js'))
   // .pipe(plugins.stripDebug())
   .pipe(plugins.uglify())
+  .on('error', onError)
   .pipe(plugins.rename( { suffix: '.min' } ))
   return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
 
@@ -75,6 +78,7 @@ gulp.task('css', ['images'], function() {
       precision: 3,
       errLogToConsole: true
     }))
+    .on('error', onError)
     .pipe(plugins.postcss(postCssOpts))
     .pipe(plugins.rename( { suffix: '.min' } ))
     .pipe(gulp.dest(folder.build + 'css/'))
@@ -82,13 +86,24 @@ gulp.task('css', ['images'], function() {
 
 });
 
+gulp.task('disconnect', function() {
+      server.closeServer();
+    });
+
 gulp.watch(folder.src + 'images/**/*', ['images']);
 gulp.watch(folder.build + '**/*.html').on('change', plugins.browserSync.reload);
-gulp.watch(folder.build + '**/*.php').on('change', plugins.browserSync.reload);
+gulp.watch(folder.build + '**/**/*.php').on('change', plugins.browserSync.reload);
 gulp.watch(folder.src + 'js/**/*', ['js']).on('change', plugins.browserSync.reload);
 gulp.watch(folder.src + 'scss/**/*', ['css']);
 
-gulp.task('default', ['connect-sync']);
+gulp.task('default', ['connect-sync', 'disconnect']);
+
+//add an error listener to where your errors might be thrown.
+// .on('error', onError)
+function onError(err) {
+  console.log(err);
+  this.emit('end');
+}
 
 // watch for changes
 // gulp.task('watch', ['browser-sync'], function() {

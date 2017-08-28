@@ -110,8 +110,11 @@ body {
 	// font-weight: 300;
 	line-height: 1.625;
 	margin: 0;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: auto;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: antialiased;
+	font-kerning: normal;
 }
 
 a,
@@ -161,11 +164,11 @@ a:hover {
 // 	word-wrap: break-word;
 // }
 //
-ol,
-ul {
-	margin: 0;
-	padding: 0;
-}
+// ol,
+// ul {
+// 	margin: 0;
+// 	padding: 0;
+// }
 //
 // li {
 // 	list-style-type: none;
@@ -325,7 +328,8 @@ input[type="search"]::-webkit-search-results-button {
 // 	text-align: left;
 // }
 //
-// td {
+// td {margin: 0;
+// 	padding: 0;
 // 	border-top: 1px solid #ddd;
 // 	padding: 6px 0;
 // }
@@ -399,6 +403,8 @@ ul.secondary-nav
 {
 	clear: both;
 	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
 ul.primary-nav li,
@@ -459,12 +465,24 @@ ul.secondary-nav li
 }
 
 .hero h1 {
+	@include headline_style();
 	text-transform: uppercase;
+	@include font-size(4);
+	margin: 0 0 .25em 0;
+}
+
+.hero h1::after {
+	background-color: $color-secondary;
+}
+
+.home .hero h1 {
 	font-weight: 300;
 	@include font-size(5.4);
-	margin: 0 0 .25em 0;
 	line-height: 1;
-	text-align: center;
+}
+
+.home .hero h1::after {
+	content: none;
 }
 
 .hero p {
@@ -549,6 +567,9 @@ ul.secondary-nav li
 }
 
 .enrollment-nav {
+	margin: 0;
+	padding: 0;
+
 	@include bp(tiny-bear) {
 		text-align: left;
 	}
@@ -623,9 +644,10 @@ ul.secondary-nav li
 }
 
 .steps {
-	background: url('/images/path.svg'); 
+	background: url('/images/path.svg');
 	background-position: center 200px;
 	background-repeat: no-repeat;
+	margin: 0 auto;
 
 	@include bp(papa-bear) {
 		background-size: 900px 100%;
@@ -701,4 +723,161 @@ ul.secondary-nav li
 	color: $color-primary-dark;
 	display: block;
 	font-weight: 700;
+}
+
+.site-inner {
+	background-color: #f1f1f1;
+	background: linear-gradient(90deg, #f1f1f1 27%, #fff 27%);
+
+	@include bp(mama-bear) {
+		background: none;
+	}
+}
+
+.site-inner {
+	padding: 40px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+
+	@include bp(mama-bear) {
+		flex-direction: column-reverse;
+	};
+}
+
+.content {
+	width: 68%;
+
+	@include bp(mama-bear) {
+		width: 100%;
+	};
+}
+
+.content h2 {
+	margin-top: 0;
+
+	@include bp(mama-bear) {
+		margin-top: 4rem;
+	};
+}
+
+.sidebar {
+	width: 25%;
+
+	@include bp(mama-bear) {
+		width: 100%;
+	};
+}
+
+.task-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+
+	@include bp(tiny-bear) {
+		display: none;
+	};
+}
+
+.task-nav-r {
+	list-style-type: none;
+	display: none;
+	margin: 0;
+	padding: 0;
+
+	// width: 0;
+	// height: 0;
+	// opacity: 0;
+
+	// @include bp(tiny-bear) {
+	// 	display: inline-block;
+	// };
+}
+
+.task-nav-r li, .task-nav li {
+
+	@include bp(mama-bear) {
+		width: 32%;
+		display: inline-block;
+		margin: 0 0 .5rem 0;
+	};
+
+	@include bp(baby-bear) {
+		width: 49%;
+	};
+	@include bp(tiny-bear) {
+		width: 100%;
+	};
+}
+
+.task-nav-r li a, .task-nav li a {
+	display: block;
+	font-weight: 300;
+	padding: 2rem;
+	border-bottom: 1px solid $color-gray-light;
+	color: $color-primary-dark;
+	position: relative;
+
+	@include bp(mama-bear) {
+		@include font-size(1.6);
+		padding: 1rem 1rem;
+		text-align: center;
+		border-bottom: none;
+		background-color: rgba(#e1e1e1,.5);
+	};
+
+	@include bp(baby-bear) {
+		font-weight: 400;
+	};
+
+}
+
+.task-nav-r li a:hover,
+.task-nav-r li a.current,
+.task-nav li a:hover,
+.task-nav li a.current
+{
+	text-decoration: none;
+	background-color: rgba(#e1e1e1, 1);
+
+}
+
+.task-nav-r li a:hover::after, .task-nav li a.current::after, .task-nav-r li a.current::after, .task-nav li a:hover::after
+{
+	content: "⟶";
+	position: absolute;
+	right: 1rem;
+
+	@include bp(papa-bear) {
+		content: none;
+	};
+
+}
+
+.task-nav-r li a i, .task-nav li a i {
+	margin: 0 1.5rem 0 0;
+
+	@include bp(mama-bear) {
+		margin: 0 1rem 0 0;
+	};
+
+
+
+	@include bp(tiny-bear) {
+		display: none;
+	};
+
+}
+
+.page-nav {
+	margin: 4rem 0 0 0;
+}
+
+.page-nav a:last-child {
+	float: right;
+}
+
+.benefits {
+
 }
