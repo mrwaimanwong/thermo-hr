@@ -174,10 +174,12 @@ $('a[href^="#"]').on('click',function (e) {
   var url = getFileName();
   var $title = url.replace(/\-/g, ' ');
 
-  $title = url.toLowerCase().replace(/\b[a-z]/g, function(letter) {
-    return letter.toUpperCase();
-  });
+  $title = $title.toLowerCase().replace(/\b[a-z]/g, function(letter) {
 
+    return letter.toUpperCase();
+
+  });
+console.log($title+"**************");
   $('title').html('Thermo - ' + $title);
 
   if (url == '' || url == 'home') {

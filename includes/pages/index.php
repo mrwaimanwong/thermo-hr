@@ -24,7 +24,7 @@
 <section id="section1">
 <div><h2><span class="step-num">1</span> Start</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor neque non orci iaculis feugiat. Pellentesque vitae rutrum diam, eu sodales dolor. Fusce a bibendum urna.</p>
-<a href="?page=benefits-overview" class="step-link">Learn About Your Benefits <i class="fa fa-long-arrow-right"></i></a>
+<a href="benefits-overview.html" class="step-link">Learn About Your Benefits <i class="fa fa-long-arrow-right"></i></a>
 </div>
 </section>
 

@@ -14,7 +14,6 @@
         <link rel="stylesheet" type="text/css" href="/css/main.min.css">
     </head>
     <body class="animated fadeIn">
-      <section class="thermo"></section>
     	<header>
     		<div class="wrap">
     			<div class="title-area">iConnect</div>
