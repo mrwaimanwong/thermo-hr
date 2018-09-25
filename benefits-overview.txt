@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="/sites/us-benefits/documents/code_stylelib/css/main.css"/>
+<script src="/sites/us-benefits/documents/code_stylelib/js/enrollment-scripts.js"></script>
+<div id="sandbox">
+
+  <div class="header" onloadedmetadata="">
+    <div class="wrap">
+      <div class="title-area">iConnect</div>
+      <ul class="primary-nav">
+        <li><a href="EnrollmentHome.aspx">Enroll in My Benefits</a></li>
+        <li><a href="https://thermofisher.sharepoint.com/sites/functions/hr1/Pages/US-ChangeBenefits.aspx">Change My Benefits</a></li>
+        <li><a href="https://thermofisher.sharepoint.com/sites/functions/hr1/Pages/US-AllBenefits.aspx">Research Benefits</a></li>
+      </ul>
+      <ul class="task-nav-r">
+
+      </ul>
+      <ul class="secondary-nav">
+        <li><a href="https://thermofisher.sharepoint.com/sites/functions/hr1/usbenefits/pages/change-my-benefits.html">FAQs</a></li>
+        <li><a href="https://thermofisher.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=3b82b06a0faa960020be847022050e26&sysparm_link_parent=e15706fc0a0a0aa7007fc21e1ab70c2f&sysparm_catalog=e0d08b13c3330100c8b837659bba8fb4&sysparm_catalog_view=catalog_default">Contact HR1</a></li>
+        <li><a href="https://hub.thermofisher.com/twmtr" id="my-total-rewards">My Total Rewards</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="section hero">
+    <div class="wrap">
+      <h1 id="page-header"></h1>
+    </div>
+  </div>
+  <div class="site-inner">
+    <div class="main content">
+      <div class="ww-content"></div>
+      <div class="page-nav">
+
+      </div>
+    </div>
+    <div class="aside sidebar"><ul class="task-nav">
+
+    </ul>
+  </div>
+</div>

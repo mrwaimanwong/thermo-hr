@@ -1,0 +1,5 @@
+<ul id="top" class="ww-anchor-menu"><li><a title="Plan Summary" href="#plansum" alt="Plan Summary"><i class="fa fa-info-circle"></i>Plan Summary</a></li>
+<li><a title="Plan Eligibility" href="#elig" alt="Plan Eligibility"><i class="fa fa-check-square-o"></i>Plan Eligibility</a></li>
+<li><a title="Coverage &amp; Cost" href="#cost" alt="Coverage &amp; Cost"><i class="fa fa-dollar"></i>Coverage &amp; Cost</a></li>
+<li><a title="Vendor Contact" href="#contact" alt="Vendor Contact"><i class="fa fa-address-card-o"></i>Vendor Contact</a></li>
+<li><a title="Q&amp;A" href="#topq" alt="Q&amp;A"><i class="fa fa-question-circle-o"></i>Q&amp;A</a></li></ul>

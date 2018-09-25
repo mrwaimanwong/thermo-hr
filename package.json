@@ -19,6 +19,7 @@
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-connect-php": "^1.0.1",
+    "gulp-css-sandbox": "0.0.0",
     "gulp-deporder": "^1.1.0",
     "gulp-imagemin": "^3.3.0",
     "gulp-load-plugins": "^1.5.0",

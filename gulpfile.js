@@ -2,7 +2,8 @@
 var gulp = require('gulp'),
 //Need to edit the regular expression to account for a second dash
 //So adding the line below for now
-connect = require('gulp-connect-php');
+connect = require('gulp-connect-php'),
+csssandbox = require("gulp-css-sandbox");
 var cp = require('child_process');
 
 plugins = require('gulp-load-plugins')({
@@ -24,6 +25,7 @@ gulp.task('connect-sync', ['js'], function() {
   connect.server({}, function (){
     plugins.browserSync({
       proxy: '127.0.0.1:8000',
+      port: 8000,
       notify: false
     });
   });
@@ -52,7 +54,7 @@ gulp.task('images', function() {
 // JavaScript processing
 gulp.task('js', function() {
 
-  var jsbuild = gulp.src(folder.src + 'js/**/*')
+  var jsbuild = gulp.src([folder.src + 'js/jquery.waypoints.min.js', folder.src + 'js/jquery.waypoints.min.js', folder.src + 'js/**/*'])
   .pipe(plugins.deporder())
   .pipe(plugins.concat('scripts.js'))
   // .pipe(plugins.stripDebug())
@@ -67,9 +69,9 @@ gulp.task('js', function() {
 gulp.task('css', ['images'], function() {
 
   var postCssOpts = [
-  plugins.autoprefixer({ browsers: ['last 2 versions', '> 2%'] }),
+  plugins.autoprefixer({ browsers: ['last 2 versions', '> 2%'] })
   // plugins.cssMqpacker,
-  plugins.cssnano
+  // plugins.cssnano
   ];
 
   return gulp.src(folder.src + 'scss/main.scss')
@@ -80,8 +82,9 @@ gulp.task('css', ['images'], function() {
       errLogToConsole: true
     }))
     .on('error', onError)
+    .pipe(csssandbox('#sandbox'))
     .pipe(plugins.postcss(postCssOpts))
-    .pipe(plugins.rename( { suffix: '.min' } ))
+    // .pipe(plugins.rename( { suffix: '.min' } ))
     .pipe(gulp.dest(folder.build + 'css/'))
     .pipe(plugins.browserSync.reload({stream: true}));
 

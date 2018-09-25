@@ -2,3 +2,7 @@ node_modules
 .tmp
 .zip
 .sh
+src/custom_old.js
+src/includes/pages/_old/
+src/includes/x-gif.html
+src/js/libgif.js

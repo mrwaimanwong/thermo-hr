@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="/sites/us-benefits/documents/code_stylelib/css/main.css"/>
+<script src="/sites/us-benefits/documents/code_stylelib/js/enrollment-scripts.js"></script>
+<script>
+      $(document).ready(function() {
+	    $('.welcome-name').text('Welcome '+_spPageContextInfo.userDisplayName.split(',')[1].trim().split(" ")[0]);
+
+	  });
+</script>
+<div id="sandbox">
+    <div class="header">
+      <div class="wrap">
+         <div class="title-area">iConnect<br/></div>
+         <ul class="primary-nav">
+           <li><a href="EnrollmentHome.aspx">Enroll in My Benefits</a></li>
+           <li><a href="https://thermofisher.sharepoint.com/sites/functions/hr1/Pages/US-ChangeBenefits.aspx">Change My Benefits</a></li>
+           <li><a href="https://thermofisher.sharepoint.com/sites/functions/hr1/Pages/US-AllBenefits.aspx">Benefits Directory</a></li>
+         </ul>
+         <ul class="secondary-nav">
+           <li><a href="https://thermofisher.sharepoint.com/sites/functions/hr1/USBenEnrollDocs/FAQs.pdf" target="_blank">FAQs</a></li>
+           <li><a href="https://thermofisher.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=3b82b06a0faa960020be847022050e26&sysparm_link_parent=e15706fc0a0a0aa7007fc21e1ab70c2f&sysparm_catalog=e0d08b13c3330100c8b837659bba8fb4&sysparm_catalog_view=catalog_default">Contact HR1</a></li>
+           <li><a href="https://hub.thermofisher.com/twmtr" id="my-total-rewards">My Total Rewards</a></li>
+         </ul>
+      </div>
+    </div>
+
+  <div class="section hero">
+      <div class="wrap">
+         <div class="one-half first">
+            <h1>2018 Benefits
+               <span class="hero-title">Enrollment</span></h1>
+            <div class="hero-banner">
+               <div class="hero-banner-middle">
+                 Your path to selecting your 2018 Benefits is below!  New Hires have 31 days to enroll from your date of hire! </div>
+            </div>
+            <ul class="enrollment-nav">
+               <li>
+                  <a href="#section1">1. Start</a></li>
+               <li>
+                  <a href="#section2">2. Your Providers</a></li>
+               <li>
+                  <a href="#section3">3. Your Benefits</a></li>
+               <li>
+                  <a href="#section4">4. Enroll</a></li>
+               <li>
+                  <a href="#section5">5. Health Survey</a></li>
+            </ul>
+         </div>
+         <div class="one-half">
+            <p>
+               <span class="welcome-name"></span>, to Thermo Fisher Scientific Benefits! Thermo Fisher offers a comprehensive and competitive benefits program you and your family can count on. Our pay and benefits package, which we call My Total Rewards, is one way we strive to develop and support our colleagues.</p><p>We offer a carefully selected choice of healthcare plans that provide flexibility for how employees invest their healthcare dollars. We aim to strike a balance between providing employees with many similar plan options or forcing one-size-fits-all medical and dental plans on a diverse group of employees with different needs.  All of the information you need to make your elections can be found on this site.</p>
+         </div>
+      </div>
+</div>
+<div class="wrap steps">
+      <div id="section1" class="section" style="opacity:0;">
+         <div>
+           <a href="/sites/US-Benefits/Pages/LearnAboutBenefits.aspx" class="step-link"><img src="/sites/us-benefits/documents/code_stylelib/images/rocket.svg"></a>
+            <h2><span class="step-num">1</span> Start</h2>
+            <p>Take the time review the detailed Enrollment materials mailed to your home, and on this site where you can review the plan summaries as well as the employee contribution amounts for our benefit plans, including medical, dental and vision coverage and optional life and accident insurance.</p>
+            <a href="/sites/US-Benefits/Pages/LearnAboutBenefits.aspx" class="step-link">Learn About Your Benefits
+               <i class="fa fa-long-arrow-right"></i></a><br>
+<a href="https://thermofisher.sharepoint.com/sites/US-Benefits/Pages/LearnAboutBenefits.aspx?page=SavingsSpendingAccounts" classf="step-link">Learn About Your HSA and FSA<i class="fa fa-long-arrow-right"></i></a><br></div></div>
+      <div id="section2" class="section">
+         <div>
+           <a href="http://www.cigna.com/thermofisher" target="_blank" class="step-link"><img src="/sites/us-benefits/documents/code_stylelib/images/people.svg"></a>
+            <h2><span class="step-num">2</span> Your Providers</h2>
+            <p>Now is the time to confirm if your current MEDICAL providers participate in the Cigna network. Your Dental coverage will remain with Delta Dental of MA for 2018.
+                 </br><strong>
+                     <a href="http://www.cigna.com/thermofisher" target="_blank" class="step-link">Click here to accces the Cigna Pre-Enrollment Site <i class="fa fa-long-arrow-right"></i></a></p></div></div>
+      <div id="section3" class="section">
+         <div>
+           <a href="https://hub.thermofisher.com/smart/alex" target=_"blank" class="step-link"><img src="/sites/us-benefits/documents/code_stylelib/images/shield.svg"></a>
+            <h2><span class="step-num">3</span> Your Benefits</h2>
+            <p><strong>Ask Alex Virtual Benefit Counselor</strong> Thermo Fisher provides you with the many tools and resources to allow you to thoroughly review and select the best coverage for you and your family. In addition to the home mailings and the Open Enrollment Resource Site, we provide you with Alex, a virtual benefits counselor. Alex provides personalized support to help you determine the benefits elections that best fit your needs.  It’s an engaging and easy-to-use interactive tool that explains your options without benefits jargon and helps you decide which plan might make the most sense for you.</p>
+            <a href="https://hub.thermofisher.com/smart/alex" target=_"blank" class="step-link">Complete Ask Alex
+               <i class="fa fa-long-arrow-right"></i></a>
+          </div>
+      </div>
+
+      <div id="section4" class="section">
+         <div><a href=" https://hub.thermofisher.com/ws-b " target=_"blank" class="step-link"> <img src="/sites/us-benefits/documents/code_stylelib/images/flag.svg"></a>
+            <h2><span class="step-num">4</span> Enroll</h2>
+            <!-- <p><a href=" https://hub.thermofisher.com/ws-b" target=_"blank" class="step-link">Click here to enroll as a new hire, review your selections, or change your benefits! <i class="fa fa-long-arrow-right"></i></a></p> -->
+            <p>We are currently upgrading our benefits enrollment website, and as part of this process our website will be unavailable until June 18 at which point you will be able to access the enrollment website to enroll and manage your benefits. If you have any questions, please contact HR1 at <a href="mailto:HR1@thermofisher.com">HR1@thermofisher.com</a>.</p>
+          </div>
+      </div>
+
+      <div id="section5" class="section">
+         <div><a href="/sites/US-Benefits/Pages/LearnAboutBenefits.aspx?page=HealthAssessment" class="step-link"><img src="/sites/us-benefits/documents/code_stylelib/images/survey.svg"></a>
+            <h2><span class="step-num">5</span> Health Assessment</h2>
+            <p>The Cigna, Health Assessment is your single key to earning rewards towards your healthcare costs.  Simply complete the Health Assessment within 60 days of your hire date to earn one of two rewards towards your healthcare costs if enrolled in the Core 1500 HDHP or the Enhanced 500 PPO plan. If you elect the Core 1500 HDHP, you will receive a company contribution to your Health Savings Account (HSA).  If you elect the Enhanced 500 PPO medical plan, you’ll instead receive savings on your medical plan premiums in 2018 compared to your premiums if you do not complete the assessment.</p>
+            <a href="/sites/US-Benefits/Pages/LearnAboutBenefits.aspx?page=HealthAssessment" class="step-link">Learn About Completing the Health Assessment <i class="fa fa-long-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+
+      <a href="#sandbox" class="documents" style="cursor: pointer; padding: 4rem 1rem 0; display: block; text-align: center">Going Up&nbsp;<i class="fa fa-arrow-up"></i></a>
+</div>
+<div style="display: none;"><img src="/sites/us-benefits/documents/code_stylelib/images/dot_on.svg"></div>

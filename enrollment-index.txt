@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="/sites/functions/hr1/usbenefits/documents/code_stylelib/css/main.css"/>
+<script src="/sites/functions/hr1/USBenefits/Documents/Code_StyleLib/JS/enrollment-scripts.js"></script>
+<div id="sandbox">
+
+  <div class="header" onloadedmetadata="">
+    <div class="wrap">
+      <div class="title-area">iConnect</div>
+      <ul class="primary-nav">
+        <li><a href="EnrollmentHome.aspx">Enroll in My Benefits</a></li>
+        <li><a href="https://thermofisher.sharepoint.com/sites/functions/hr1/Pages/US-ChangeBenefits.aspx">Change My Benefits</a></li>
+        <li><a href="https://thermofisher.sharepoint.com/sites/functions/hr1/Pages/US-AllBenefits.aspx">Research Benefits</a></li>
+      </ul>
+      <ul class="task-nav-r">
+        <li><a href="Benefits-Overview-Test.aspx" class="benefits"><i class="fa fa-sitemap"></i>Benefits Overview</a></li>
+        <li><a href="Perscrpitions.aspx" class="rally"><i class="fa fa-wpforms"></i>Rally Health Survey</a></li>
+        <li><a href="RatesTestPage.aspx" class="rates"><i class="fa fa-line-chart"></i>Rates</a></li>
+        <li><a href="MedicalTestPage.aspx" class="medical"><i class="fa fa-hospital-o"></i>Medical</a></li>
+        <li><a href="Prescription-Test.aspx" class="prescription"><i class="fa fa-stethoscope"></i>Prescription</a></li>
+        <li><a href="Dental-Test.aspx" class="dental"><i class="fa fa-heart-o"></i>Dental</a></li>
+        <li><a href="Vision-Test.aspx" class="vision"><i class="fa fa-heart-o"></i>Vision</a></li>
+        <li><a href="Savings-Account-Test.aspx" class="savings"><i class="fa fa-shopping-bag"></i>Savings Accounts</a></li>
+        <li><a href="Local-Medical-Plans-Test.aspx" class="local"><i class="fa fa-map-marker"></i>Local Medical Plans</a></li>
+        <li><a href="Life-Add-Disability-Test.aspx" class="life"><i class="fa fa-deaf"></i>Life/AD&D/ Disability</a></li>
+        <li><a href="Legal-Test.aspx" class="legal>"><i class="fa fa-gavel"></i>Legal</a></li>
+        <li><a href="Documents-Test.aspx" class="documents"><i class="fa fa-file-text"></i>Documents</a></li>
+      </ul>
+      <ul class="secondary-nav">
+        <li><a href="/sites/functions/hr1/usbenefits/pages/change-my-benefits.html">FAQs</a></li>
+        <li><a href="https://thermofisher.service-now.com/com.glideapp.servicecatalog_cat_item_view.do?v=1&sysparm_id=3b82b06a0faa960020be847022050e26&sysparm_link_parent=e15706fc0a0a0aa7007fc21e1ab70c2f&sysparm_catalog=e0d08b13c3330100c8b837659bba8fb4&sysparm_catalog_view=catalog_default">Contact HR1</a></li>
+        <li><a href="https://hub.thermofisher.com/twmtr" id="my-total-rewards">My Total Rewards</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="section hero">
+    <div class="wrap">
+      <h1 id="page-header"></h1>
+    </div>
+  </div>
+  <div class="site-inner">
+    <div class="main content">
+      <div class="ww-content"></div>
+      <div class="page-nav">
+        <a href="Documents-Test.aspx" class="documents">←  Documents <i class="fa fa-file-text"></i></a>
+        <a href="RallyHealthTestPage.aspx" class="rally"><i class="fa fa-wpforms"></i> Rally Health Survey →</a>
+      </div>
+    </div>
+    <div class="aside sidebar"><ul class="task-nav">
+      <li><a href="Benefits-Overview-Test.aspx" class="benefits"><i class="fa fa-sitemap"></i>Benefits Overview</a></li>
+      <li><a href="ww-test.aspx" class="rally"><i class="fa fa-wpforms"></i>Rally Health Survey</a></li>
+      <li><a href="RatesTestPage.aspx" class="rates"><i class="fa fa-line-chart"></i>Rates</a></li>
+      <li><a href="MedicalTestPage.aspx" class="medical"><i class="fa fa-hospital-o"></i>Medical</a></li>
+      <li><a href="Prescription-Test.aspx" class="prescription"><i class="fa fa-stethoscope"></i>Prescription</a></li>
+      <li><a href="Dental-Test.aspx" class="dental"><i class="fa fa-heart-o"></i>Dental</a></li>
+      <li><a href="Vision-Test.aspx" class="vision"><i class="fa fa-heart-o"></i>Vision</a></li>
+      <li><a href="Savings-Account-Test.aspx" class="savings"><i class="fa fa-shopping-bag"></i>Savings Accounts</a></li>
+      <li><a href="Local-Medical-Plans-Test.aspx" class="local"><i class="fa fa-map-marker"></i>Local Medical Plans</a></li>
+      <li><a href="Life-Add-Disability-Test.aspx" class="life"><i class="fa fa-deaf"></i>Life/AD&D/ Disability</a></li>
+      <li><a href="Legal-Test.aspx" class="legal>"><i class="fa fa-gavel"></i>Legal</a></li>
+      <li><a href="Documents-Test.aspx" class="documents"><i class="fa fa-file-text"></i>Documents</a></li>
+    </ul>
+  </div>
+<!-- <a onclick="going_up()" class="documents" style="cursor: pointer; padding: 1rem; display: block;"><i class="fa fa-arrow-circle-o-up"></i>&nbsp;&nbsp;Going Up?</a> -->
+</div>
+<!-- <script>
+function going_up(){
+  window.scrollTo(0, 0);
+};
+</script> -->

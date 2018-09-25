@@ -10,8 +10,7 @@
 <div class="one-half">
 	<p><span class="welcome-name">Welcome Brian</span>, lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius justo sed justo rhoncus pretium. Mauris sit amet varius justo sed justo rhoncus consectetur erat.</p>
 <ul class="enrollment-nav">
-<li><a href="#section1">1. Start</a></li>
-<li><a href="#section2">2. Your Providers</a></li>
+<li><a href="#section1">1. Start</a></li><li><a href="#section2">2. Your Providers</a></li>
 <li><a href="#section3">3. Your Benefits</a></li>
 <li><a href="#section4">4. Health Survey</a></li>
 <li><a href="#section5">5. Enroll</a></li>

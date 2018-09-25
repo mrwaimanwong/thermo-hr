@@ -1,5 +1,8 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
+
+jQuery.noConflict();
+// $(document).ready(function () {
 jQuery(document).ready(function ($) {
 
   (function(window, $, undefined) {
@@ -121,11 +124,11 @@ $('a[href^="#"]').on('click',function (e) {
   	    //     window.location.hash = target;
   	    // });
   // 	});
-    $('#section1').css('opacity', 0);
-    $('#section2').css('opacity', 0);
-    $('#section3').css('opacity', 0);
-    $('#section4').css('opacity', 0);
-    $('#section5').css('opacity', 0);
+    // $('#section1').css('opacity', 0);
+    // $('#section2').css('opacity', 0);
+    // $('#section3').css('opacity', 0);
+    // $('#section4').css('opacity', 0);
+    // $('#section5').css('opacity', 0);
 
     $('#section1').waypoint(function() {
     $('#section1').addClass('animated fadeInLeft');
@@ -190,6 +193,7 @@ console.log($title+"**************");
   {
     $('a[href^='+url+']').addClass('current');
     $("#page-header").text($title);
+    $('body').addClass('boo');
   }
 
 });

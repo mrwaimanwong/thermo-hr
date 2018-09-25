@@ -18,9 +18,10 @@
     		<div class="wrap">
     			<div class="title-area">iConnect</div>
     			<ul class="primary-nav">
-    				<li><a href="/">Enroll in Benefits</a></li>
+    				<li><a href="/">Enroll in My Benefits</a></li>
     				<li><a href="change-my-benefits.html">Change My Benefits</a></li>
     				<li><a href="research-benefits.html">Research Benefits</a></li>
+            <li><a href="research-benefits.html">My Total Rewards</a></li>
     			</ul>
     			<ul class="task-nav-r">
             <?php include('task_nav.php'); ?>
@@ -28,7 +29,7 @@
     			<ul class="secondary-nav">
     				<li><a href="change-my-benefits.html">FAQs</a></li>
     				<li><a href="change-my-benefits.html">Terms & Definitions</a></li>
-    				<li><a href="change-my-benefits.html">My Total Rewards</a></li>
+    				<!-- <li><a href="change-my-benefits.html">My Total Rewards</a></li> -->
     				<li><a href="change-my-benefits.html">Contact HR1</a></li>
     			</ul>
     		</div>
